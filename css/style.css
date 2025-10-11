@@ -1,0 +1,21 @@
+#tabel{
+    border-collapse: collapse;
+}
+
+td,th{
+    border: #515151 solid 1px;
+}
+.dates{
+    width: 20px;
+}
+#fio{
+    width: max-content;
+}
+th:nth-last-child(-n+4),
+thead > tr th:nth-child(-n+3){
+    width: 20px;
+}
+td:nth-child(n+3),
+td:first-child{
+    text-align: center;
+}
