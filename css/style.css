@@ -1,5 +1,7 @@
 #tabel{
     border-collapse: collapse;
+    user-select: none;
+    cursor: pointer;
 }
 
 td,th{
@@ -18,4 +20,13 @@ thead > tr th:nth-child(-n+3){
 td:nth-child(n+3),
 td:first-child{
     text-align: center;
+}
+.weekend:after{
+    content: 'В';
+}
+.absent:after{
+    content: 'н';
+}
+.ill:after{
+    content: 'б';
 }

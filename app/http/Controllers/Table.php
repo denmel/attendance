@@ -18,7 +18,11 @@ class Table extends Controller
 
     public function show($params = ""): void
     {
-        $this->view->generateTable($this->children->get_children(1),10,2025,$this->model->get_holidays(10,2025));
+        $this->view->generateTable(
+            $this->children->get_children(1),
+            $this->model->get_absent(1),
+            10,2025,
+            $this->model->get_holidays(10,2025));
 
     }
 

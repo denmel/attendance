@@ -22,4 +22,14 @@ class model_table extends Model
         return $result;
     }
 
+    function get_absent($id_group): false|array
+    {
+        $result = [];
+        $rows = $this->db->select("select id_child,day(absent_date) as day,absent_type from kindergarten.absent join kindergarten.children using(id_child) where id_group = $id_group");
+        foreach ($rows as $row) {
+            $result[$row[0]][$row[1]] = $row[2];
+        }
+        return $result;
+    }
+
 }

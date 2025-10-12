@@ -20,7 +20,7 @@
     </main>
 
 </body>
-<script src="http://<?= $_SERVER['SERVER_NAME'] ?>:<?= $_SERVER['SERVER_PORT'] ?>/js/script.js"></script>
+<script src="/js/tabel.js"></script>
 </html>
 
 
