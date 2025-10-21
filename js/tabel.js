@@ -1,7 +1,6 @@
 let tabel = document.getElementById("tabel").tBodies[0]
 let footer = document.getElementById("tabel").tFoot
 let STATE = ['present', 'absent', 'ill']
-let state = []
 let children_count;
 let days_count;
 window.addEventListener("load", () => {

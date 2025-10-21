@@ -2,13 +2,14 @@
 
 namespace App\http\Controllers;
 
+use App\http\Models\Model;
 use App\http\Models\model_children;
 use App\http\Models\model_table;
 use App\http\Views\view_table;
 
 class Table extends Controller
 {
-    private model_children $children;
+    private Model $children;
     function __construct()
     {
         $this->model = new model_table();

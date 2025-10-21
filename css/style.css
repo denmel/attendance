@@ -1,32 +1,110 @@
-#tabel{
+table {
     border-collapse: collapse;
     user-select: none;
     cursor: pointer;
 }
 
-td,th{
+td, th {
     border: #515151 solid 1px;
 }
-.dates{
+
+.dates {
     width: 20px;
 }
-#fio{
+
+#fio {
     width: max-content;
 }
-th:nth-last-child(-n+4),
-thead > tr th:nth-child(-n+3){
+
+#tabel th:nth-last-child(-n+4),
+#tabel thead > tr th:nth-child(-n+3) {
     width: 20px;
 }
-td:nth-child(n+3),
-td:first-child{
+
+#tabel td:nth-child(n+3),
+#tabel td:first-child {
     text-align: center;
 }
-.weekend:after{
+
+.weekend:after {
     content: 'В';
 }
-.absent:after{
+
+.absent:after {
     content: 'н';
 }
-.ill:after{
+
+.ill:after {
     content: 'б';
+}
+
+input[type="radio"] {
+    appearance: none;
+    position: absolute;
+}
+
+input + label {
+    cursor: pointer;
+    display: block;
+    user-select: none;
+    padding: .8rem;
+    border-radius: .5rem;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+    margin-right: 30px;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+input:checked + label{
+    background: #9b9bf4;
+}
+
+.back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #cdcdcd;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+}
+.window {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    background: #ffffff;
+    width: 50%;
+    height: 50%;
+    border-radius: 1rem;
+}
+.modal{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: none;
+}
+.modal.show{
+    display: block;
+}
+
+.btn-close{
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    width: min-content;
+    cursor: pointer;
+}
+.button{
+    width: min-content;
+    height: min-content;
+    padding: 1rem;
+    border-radius: .2rem;
+    cursor: pointer;
+    background: gray;
 }
