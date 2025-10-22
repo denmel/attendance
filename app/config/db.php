@@ -1,6 +1,6 @@
 <?php
 return ["driver" => "mysql",
-    "dbname" => "base",
+    "dbname" => "kindergarten",
     "host" => "localhost",
     "user" => "web",
     "pass" => "123456",
