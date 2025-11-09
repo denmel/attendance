@@ -12,7 +12,7 @@ class view_user extends View
     public function generateList($rows, $headers): void
     {
         $content = $this->arrayToTable($rows, $headers, "list","user");
-        $this->generate($content, $this->generateMainMenu($this->position), $this->generateSubMenu(), "template_main.php", 'Пользователи');
+        $this->generate($content, "template_main.php", 'Пользователи');
     }
 
     public function generateAdd(): void

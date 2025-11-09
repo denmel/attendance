@@ -15,10 +15,16 @@
 <div id="main">
     <?= $content ?>
 </div>
-<div class="modal" id="item-window">
+<div class="modal" id="modal-window">
     <div class="back"></div>
     <div class="window">
-        <div class="window-content"></div>
+        <span class="caption"></span>
+        <div class="window-content" id="group-window">
+
+        </div>
+        <div class="window-content" id="child-window">
+
+        </div>
         <div class="btn-close"><span class="material-symbols-outlined">
         close
         </span></div>

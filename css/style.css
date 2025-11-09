@@ -1,42 +1,4 @@
-table {
-    border-collapse: collapse;
-    user-select: none;
-    cursor: pointer;
-}
-
-td, th {
-    border: #515151 solid 1px;
-}
-
-.dates {
-    width: 20px;
-}
-
-#tabel #fio {
-    width: max-content;
-}
-
-#tabel th:nth-last-child(-n+4),
-#tabel thead > tr th:nth-child(-n+3) {
-    width: 20px;
-}
-
-#tabel td:nth-child(n+3),
-#tabel td:first-child {
-    text-align: center;
-}
-
-.weekend:after {
-    content: 'В';
-}
-
-.absent:after {
-    content: 'н';
-}
-
-.ill:after {
-    content: 'б';
-}
+@import "tables.css";
 
 input[type="radio"] {
     appearance: none;
@@ -92,7 +54,12 @@ input:checked + label{
 .modal.show{
     display: block;
 }
-
+.window-content{
+    display: none;
+}
+.window-content.show{
+    display: block;
+}
 .btn-close{
     position: absolute;
     right: .5rem;
